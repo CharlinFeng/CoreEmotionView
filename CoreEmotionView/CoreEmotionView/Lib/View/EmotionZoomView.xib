@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EmotionZoomView">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="91"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmotionIcons.bundle/img/emoticon_keyboard_magnifier" translatesAutoresizingMaskIntoConstraints="NO" id="1FV-CY-YV2">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="91"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pG8-ng-lrd">
+                    <rect key="frame" x="14" y="8" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="TOV-5S-VET"/>
+                        <constraint firstAttribute="height" constant="36" id="Ywp-nf-dWf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBT-4d-9CM">
+                    <rect key="frame" x="14" y="8" width="36" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pG8-ng-lrd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="3vw-oe-kbg"/>
+                <constraint firstItem="pG8-ng-lrd" firstAttribute="leading" secondItem="xBT-4d-9CM" secondAttribute="leading" id="A9p-pe-Jvk"/>
+                <constraint firstAttribute="bottom" secondItem="1FV-CY-YV2" secondAttribute="bottom" id="BbA-cQ-39U"/>
+                <constraint firstItem="1FV-CY-YV2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IhG-f7-Y3Z"/>
+                <constraint firstItem="1FV-CY-YV2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Z2K-9W-Gp0"/>
+                <constraint firstItem="pG8-ng-lrd" firstAttribute="bottom" secondItem="xBT-4d-9CM" secondAttribute="bottom" id="ZNZ-T3-qpy"/>
+                <constraint firstAttribute="centerX" secondItem="pG8-ng-lrd" secondAttribute="centerX" id="jhm-d2-ASs"/>
+                <constraint firstAttribute="trailing" secondItem="1FV-CY-YV2" secondAttribute="trailing" id="p9L-m0-glB"/>
+                <constraint firstItem="pG8-ng-lrd" firstAttribute="trailing" secondItem="xBT-4d-9CM" secondAttribute="trailing" id="v5r-r9-EUw"/>
+                <constraint firstItem="pG8-ng-lrd" firstAttribute="top" secondItem="xBT-4d-9CM" secondAttribute="top" id="vuj-zQ-zpJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="zooImageV" destination="pG8-ng-lrd" id="S8X-cn-KT4"/>
+                <outlet property="zoomLabel" destination="xBT-4d-9CM" id="xIV-8E-tjE"/>
+            </connections>
+            <point key="canvasLocation" x="431" y="371.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="EmotionIcons.bundle/img/emoticon_keyboard_magnifier" width="16" height="16"/>
+    </resources>
+</document>

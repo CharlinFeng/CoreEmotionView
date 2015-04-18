@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8903C3C21AD8AF8000E5B060 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8903C3C11AD8AF8000E5B060 /* main.m */; };
+		8903C3C51AD8AF8000E5B060 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8903C3C41AD8AF8000E5B060 /* AppDelegate.m */; };
+		8903C3C81AD8AF8000E5B060 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8903C3C71AD8AF8000E5B060 /* ViewController.m */; };
+		8903C3CB1AD8AF8000E5B060 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8903C3C91AD8AF8000E5B060 /* Main.storyboard */; };
+		8903C3CD1AD8AF8000E5B060 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8903C3CC1AD8AF8000E5B060 /* Images.xcassets */; };
+		8903C3D01AD8AF8000E5B060 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8903C3CE1AD8AF8000E5B060 /* LaunchScreen.xib */; };
+		8903C3DC1AD8AF8100E5B060 /* CoreEmotionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8903C3DB1AD8AF8100E5B060 /* CoreEmotionViewTests.m */; };
+		8906D8041ADE49950082403C /* NSString+EmotionExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906D8031ADE49950082403C /* NSString+EmotionExtend.m */; };
+		8906D8081ADE4A2E0082403C /* EmotionViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906D8071ADE4A2E0082403C /* EmotionViewConst.m */; };
+		8906D80B1ADE52CB0082403C /* EmotionDeleteBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906D80A1ADE52CB0082403C /* EmotionDeleteBtn.m */; };
+		891E3D0C1AD9847700A74F20 /* UIView+EmotionExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 891E3D0B1AD9847700A74F20 /* UIView+EmotionExtend.m */; };
+		891E3D0F1AD985AD00A74F20 /* EmotionScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 891E3D0E1AD985AD00A74F20 /* EmotionScrollView.m */; };
+		891E3D121AD9913A00A74F20 /* EmotionItemBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 891E3D111AD9913A00A74F20 /* EmotionItemBtn.m */; };
+		89385C581AD975A0002E89A6 /* NSArray+SubArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 89385C571AD975A0002E89A6 /* NSArray+SubArray.m */; };
+		893BB10C1AE0CD8B003D9CB6 /* NSAttributedString+Emotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 893BB10B1AE0CD8B003D9CB6 /* NSAttributedString+Emotion.m */; };
+		893BB1101AE0CE6C003D9CB6 /* EmotionAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 893BB10F1AE0CE6C003D9CB6 /* EmotionAttachment.m */; };
+		893BB1131AE0D4D9003D9CB6 /* UITextView+Emotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 893BB1121AE0D4D9003D9CB6 /* UITextView+Emotion.m */; };
+		893BB1161AE0D680003D9CB6 /* UITextField+Emotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 893BB1151AE0D680003D9CB6 /* UITextField+Emotion.m */; };
+		893BB1191AE0EE0E003D9CB6 /* EmotionZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 893BB1181AE0EE0E003D9CB6 /* EmotionZoomView.m */; };
+		893BB11B1AE0EE8E003D9CB6 /* EmotionZoomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 893BB11A1AE0EE8E003D9CB6 /* EmotionZoomView.xib */; };
+		895796BA1AE10AAA00E8B04A /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = 895796B71AE10AAA00E8B04A /* NSString+File.m */; };
+		895796BB1AE10AAA00E8B04A /* CoreArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 895796B91AE10AAA00E8B04A /* CoreArchive.m */; };
+		8965598D1AD93F7300A41F7A /* EmotionPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8965598C1AD93F7300A41F7A /* EmotionPageView.m */; };
+		896559901AD93FC600A41F7A /* EmotionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8965598F1AD93FC600A41F7A /* EmotionModel.m */; };
+		89655B591AD951D100A41F7A /* EmotionIcons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89655B581AD951D100A41F7A /* EmotionIcons.bundle */; };
+		8979B1DB1AD953C9001BD230 /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979B1CD1AD953C9001BD230 /* MJConst.m */; };
+		8979B1DC1AD953C9001BD230 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979B1D01AD953C9001BD230 /* MJFoundation.m */; };
+		8979B1DD1AD953C9001BD230 /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979B1D21AD953C9001BD230 /* MJIvar.m */; };
+		8979B1DE1AD953C9001BD230 /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979B1D41AD953C9001BD230 /* MJType.m */; };
+		8979B1DF1AD953C9001BD230 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979B1D61AD953C9001BD230 /* NSObject+MJCoding.m */; };
+		8979B1E01AD953C9001BD230 /* NSObject+MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979B1D81AD953C9001BD230 /* NSObject+MJIvar.m */; };
+		8979B1E11AD953C9001BD230 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979B1DA1AD953C9001BD230 /* NSObject+MJKeyValue.m */; };
+		8979B1E51AD9556C001BD230 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979B1E41AD9556C001BD230 /* NSString+Emoji.m */; };
+		898C022D1ADA129500333734 /* EmotionPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 898C022C1ADA129500333734 /* EmotionPageControl.m */; };
+		89975CE91AE151670072E62D /* NSMutableArray+EmotionExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89975CE81AE151670072E62D /* NSMutableArray+EmotionExtend.m */; };
+		D6633F911AD8D78C00303043 /* CoreEmotionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6633F901AD8D78C00303043 /* CoreEmotionView.m */; };
+		D6633F931AD8D7B000303043 /* CoreEmotionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6633F921AD8D7B000303043 /* CoreEmotionView.xib */; };
+		D6633FA41AD8E0D400303043 /* AnimForCoreBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = D6633F981AD8E0D400303043 /* AnimForCoreBtn.m */; };
+		D6633FA51AD8E0D400303043 /* CoreBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = D6633F9A1AD8E0D400303043 /* CoreBtn.m */; };
+		D6633FA61AD8E0D400303043 /* CoreStatusBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = D6633F9C1AD8E0D400303043 /* CoreStatusBtn.m */; };
+		D6633FA71AD8E0D400303043 /* UIImage+ColorForBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = D6633F9F1AD8E0D400303043 /* UIImage+ColorForBtn.m */; };
+		D6633FA81AD8E0D400303043 /* CoreStatusBtnMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6633FA21AD8E0D400303043 /* CoreStatusBtnMaskView.m */; };
+		D6633FA91AD8E0D400303043 /* CoreStatusBtnMaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6633FA31AD8E0D400303043 /* CoreStatusBtnMaskView.xib */; };
+		D6633FAF1AD8E40F00303043 /* EmotionTabBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = D6633FAE1AD8E40F00303043 /* EmotionTabBtn.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8903C3D61AD8AF8100E5B060 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8903C3B41AD8AF8000E5B060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8903C3BB1AD8AF8000E5B060;
+			remoteInfo = CoreEmotionView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8903C3BC1AD8AF8000E5B060 /* CoreEmotionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreEmotionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8903C3C01AD8AF8000E5B060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8903C3C11AD8AF8000E5B060 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8903C3C31AD8AF8000E5B060 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8903C3C41AD8AF8000E5B060 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8903C3C61AD8AF8000E5B060 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8903C3C71AD8AF8000E5B060 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8903C3CA1AD8AF8000E5B060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8903C3CC1AD8AF8000E5B060 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8903C3CF1AD8AF8000E5B060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8903C3D51AD8AF8100E5B060 /* CoreEmotionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreEmotionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8903C3DA1AD8AF8100E5B060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8903C3DB1AD8AF8100E5B060 /* CoreEmotionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreEmotionViewTests.m; sourceTree = "<group>"; };
+		8906D8021ADE49950082403C /* NSString+EmotionExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EmotionExtend.h"; sourceTree = "<group>"; };
+		8906D8031ADE49950082403C /* NSString+EmotionExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EmotionExtend.m"; sourceTree = "<group>"; };
+		8906D8061ADE4A2E0082403C /* EmotionViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionViewConst.h; sourceTree = "<group>"; };
+		8906D8071ADE4A2E0082403C /* EmotionViewConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionViewConst.m; sourceTree = "<group>"; };
+		8906D8091ADE52CB0082403C /* EmotionDeleteBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionDeleteBtn.h; sourceTree = "<group>"; };
+		8906D80A1ADE52CB0082403C /* EmotionDeleteBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionDeleteBtn.m; sourceTree = "<group>"; };
+		891E3D0A1AD9847700A74F20 /* UIView+EmotionExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EmotionExtend.h"; sourceTree = "<group>"; };
+		891E3D0B1AD9847700A74F20 /* UIView+EmotionExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EmotionExtend.m"; sourceTree = "<group>"; };
+		891E3D0D1AD985AD00A74F20 /* EmotionScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionScrollView.h; sourceTree = "<group>"; };
+		891E3D0E1AD985AD00A74F20 /* EmotionScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionScrollView.m; sourceTree = "<group>"; };
+		891E3D101AD9913A00A74F20 /* EmotionItemBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionItemBtn.h; sourceTree = "<group>"; };
+		891E3D111AD9913A00A74F20 /* EmotionItemBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionItemBtn.m; sourceTree = "<group>"; };
+		89385C561AD975A0002E89A6 /* NSArray+SubArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SubArray.h"; sourceTree = "<group>"; };
+		89385C571AD975A0002E89A6 /* NSArray+SubArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SubArray.m"; sourceTree = "<group>"; };
+		893BB10A1AE0CD8B003D9CB6 /* NSAttributedString+Emotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Emotion.h"; sourceTree = "<group>"; };
+		893BB10B1AE0CD8B003D9CB6 /* NSAttributedString+Emotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Emotion.m"; sourceTree = "<group>"; };
+		893BB10E1AE0CE6C003D9CB6 /* EmotionAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionAttachment.h; sourceTree = "<group>"; };
+		893BB10F1AE0CE6C003D9CB6 /* EmotionAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionAttachment.m; sourceTree = "<group>"; };
+		893BB1111AE0D4D9003D9CB6 /* UITextView+Emotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Emotion.h"; sourceTree = "<group>"; };
+		893BB1121AE0D4D9003D9CB6 /* UITextView+Emotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Emotion.m"; sourceTree = "<group>"; };
+		893BB1141AE0D680003D9CB6 /* UITextField+Emotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Emotion.h"; sourceTree = "<group>"; };
+		893BB1151AE0D680003D9CB6 /* UITextField+Emotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Emotion.m"; sourceTree = "<group>"; };
+		893BB1171AE0EE0E003D9CB6 /* EmotionZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionZoomView.h; sourceTree = "<group>"; };
+		893BB1181AE0EE0E003D9CB6 /* EmotionZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionZoomView.m; sourceTree = "<group>"; };
+		893BB11A1AE0EE8E003D9CB6 /* EmotionZoomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmotionZoomView.xib; sourceTree = "<group>"; };
+		895796B61AE10AAA00E8B04A /* NSString+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+File.h"; sourceTree = "<group>"; };
+		895796B71AE10AAA00E8B04A /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
+		895796B81AE10AAA00E8B04A /* CoreArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreArchive.h; sourceTree = "<group>"; };
+		895796B91AE10AAA00E8B04A /* CoreArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreArchive.m; sourceTree = "<group>"; };
+		8965598B1AD93F7300A41F7A /* EmotionPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionPageView.h; sourceTree = "<group>"; };
+		8965598C1AD93F7300A41F7A /* EmotionPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionPageView.m; sourceTree = "<group>"; };
+		8965598E1AD93FC600A41F7A /* EmotionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionModel.h; sourceTree = "<group>"; };
+		8965598F1AD93FC600A41F7A /* EmotionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionModel.m; sourceTree = "<group>"; };
+		89655B581AD951D100A41F7A /* EmotionIcons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmotionIcons.bundle; sourceTree = "<group>"; };
+		8979B1CC1AD953C9001BD230 /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
+		8979B1CD1AD953C9001BD230 /* MJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJConst.m; sourceTree = "<group>"; };
+		8979B1CE1AD953C9001BD230 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		8979B1CF1AD953C9001BD230 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		8979B1D01AD953C9001BD230 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		8979B1D11AD953C9001BD230 /* MJIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJIvar.h; sourceTree = "<group>"; };
+		8979B1D21AD953C9001BD230 /* MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJIvar.m; sourceTree = "<group>"; };
+		8979B1D31AD953C9001BD230 /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		8979B1D41AD953C9001BD230 /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		8979B1D51AD953C9001BD230 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		8979B1D61AD953C9001BD230 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		8979B1D71AD953C9001BD230 /* NSObject+MJIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJIvar.h"; sourceTree = "<group>"; };
+		8979B1D81AD953C9001BD230 /* NSObject+MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJIvar.m"; sourceTree = "<group>"; };
+		8979B1D91AD953C9001BD230 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		8979B1DA1AD953C9001BD230 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		8979B1E31AD9556C001BD230 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		8979B1E41AD9556C001BD230 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		898C022B1ADA129500333734 /* EmotionPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionPageControl.h; sourceTree = "<group>"; };
+		898C022C1ADA129500333734 /* EmotionPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionPageControl.m; sourceTree = "<group>"; };
+		89975CE71AE151670072E62D /* NSMutableArray+EmotionExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+EmotionExtend.h"; sourceTree = "<group>"; };
+		89975CE81AE151670072E62D /* NSMutableArray+EmotionExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+EmotionExtend.m"; sourceTree = "<group>"; };
+		D6633F8F1AD8D78C00303043 /* CoreEmotionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreEmotionView.h; sourceTree = "<group>"; };
+		D6633F901AD8D78C00303043 /* CoreEmotionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreEmotionView.m; sourceTree = "<group>"; };
+		D6633F921AD8D7B000303043 /* CoreEmotionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreEmotionView.xib; sourceTree = "<group>"; };
+		D6633F971AD8E0D400303043 /* AnimForCoreBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimForCoreBtn.h; sourceTree = "<group>"; };
+		D6633F981AD8E0D400303043 /* AnimForCoreBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimForCoreBtn.m; sourceTree = "<group>"; };
+		D6633F991AD8E0D400303043 /* CoreBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreBtn.h; sourceTree = "<group>"; };
+		D6633F9A1AD8E0D400303043 /* CoreBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreBtn.m; sourceTree = "<group>"; };
+		D6633F9B1AD8E0D400303043 /* CoreStatusBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatusBtn.h; sourceTree = "<group>"; };
+		D6633F9C1AD8E0D400303043 /* CoreStatusBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreStatusBtn.m; sourceTree = "<group>"; };
+		D6633F9E1AD8E0D400303043 /* UIImage+ColorForBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorForBtn.h"; sourceTree = "<group>"; };
+		D6633F9F1AD8E0D400303043 /* UIImage+ColorForBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorForBtn.m"; sourceTree = "<group>"; };
+		D6633FA11AD8E0D400303043 /* CoreStatusBtnMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatusBtnMaskView.h; sourceTree = "<group>"; };
+		D6633FA21AD8E0D400303043 /* CoreStatusBtnMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreStatusBtnMaskView.m; sourceTree = "<group>"; };
+		D6633FA31AD8E0D400303043 /* CoreStatusBtnMaskView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreStatusBtnMaskView.xib; sourceTree = "<group>"; };
+		D6633FAD1AD8E40F00303043 /* EmotionTabBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionTabBtn.h; sourceTree = "<group>"; };
+		D6633FAE1AD8E40F00303043 /* EmotionTabBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionTabBtn.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8903C3B91AD8AF8000E5B060 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8903C3D21AD8AF8000E5B060 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8903C3B31AD8AF8000E5B060 = {
+			isa = PBXGroup;
+			children = (
+				8903C3BE1AD8AF8000E5B060 /* CoreEmotionView */,
+				8903C3D81AD8AF8100E5B060 /* CoreEmotionViewTests */,
+				8903C3BD1AD8AF8000E5B060 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8903C3BD1AD8AF8000E5B060 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8903C3BC1AD8AF8000E5B060 /* CoreEmotionView.app */,
+				8903C3D51AD8AF8100E5B060 /* CoreEmotionViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8903C3BE1AD8AF8000E5B060 /* CoreEmotionView */ = {
+			isa = PBXGroup;
+			children = (
+				D6633F8D1AD8D76B00303043 /* CoreEmotionView */,
+				D6633F941AD8E06200303043 /* FrameWorks */,
+				8903C3C31AD8AF8000E5B060 /* AppDelegate.h */,
+				8903C3C41AD8AF8000E5B060 /* AppDelegate.m */,
+				8903C3C61AD8AF8000E5B060 /* ViewController.h */,
+				8903C3C71AD8AF8000E5B060 /* ViewController.m */,
+				8903C3C91AD8AF8000E5B060 /* Main.storyboard */,
+				8903C3CC1AD8AF8000E5B060 /* Images.xcassets */,
+				8903C3CE1AD8AF8000E5B060 /* LaunchScreen.xib */,
+				8903C3BF1AD8AF8000E5B060 /* Supporting Files */,
+			);
+			path = CoreEmotionView;
+			sourceTree = "<group>";
+		};
+		8903C3BF1AD8AF8000E5B060 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8903C3C01AD8AF8000E5B060 /* Info.plist */,
+				8903C3C11AD8AF8000E5B060 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8903C3D81AD8AF8100E5B060 /* CoreEmotionViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				8903C3DB1AD8AF8100E5B060 /* CoreEmotionViewTests.m */,
+				8903C3D91AD8AF8100E5B060 /* Supporting Files */,
+			);
+			path = CoreEmotionViewTests;
+			sourceTree = "<group>";
+		};
+		8903C3D91AD8AF8100E5B060 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8903C3DA1AD8AF8100E5B060 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8906D8051ADE4A1A0082403C /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				8906D8061ADE4A2E0082403C /* EmotionViewConst.h */,
+				8906D8071ADE4A2E0082403C /* EmotionViewConst.m */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		893BB10D1AE0CE51003D9CB6 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				893BB10E1AE0CE6C003D9CB6 /* EmotionAttachment.h */,
+				893BB10F1AE0CE6C003D9CB6 /* EmotionAttachment.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		895796B41AE10AAA00E8B04A /* CoreArchive */ = {
+			isa = PBXGroup;
+			children = (
+				895796B51AE10AAA00E8B04A /* Category */,
+				895796B81AE10AAA00E8B04A /* CoreArchive.h */,
+				895796B91AE10AAA00E8B04A /* CoreArchive.m */,
+			);
+			path = CoreArchive;
+			sourceTree = "<group>";
+		};
+		895796B51AE10AAA00E8B04A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				895796B61AE10AAA00E8B04A /* NSString+File.h */,
+				895796B71AE10AAA00E8B04A /* NSString+File.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		896559931AD941C300A41F7A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				89655B581AD951D100A41F7A /* EmotionIcons.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8979B1CB1AD953C9001BD230 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8979B1CC1AD953C9001BD230 /* MJConst.h */,
+				8979B1CD1AD953C9001BD230 /* MJConst.m */,
+				8979B1CE1AD953C9001BD230 /* MJExtension.h */,
+				8979B1CF1AD953C9001BD230 /* MJFoundation.h */,
+				8979B1D01AD953C9001BD230 /* MJFoundation.m */,
+				8979B1D11AD953C9001BD230 /* MJIvar.h */,
+				8979B1D21AD953C9001BD230 /* MJIvar.m */,
+				8979B1D31AD953C9001BD230 /* MJType.h */,
+				8979B1D41AD953C9001BD230 /* MJType.m */,
+				8979B1D51AD953C9001BD230 /* NSObject+MJCoding.h */,
+				8979B1D61AD953C9001BD230 /* NSObject+MJCoding.m */,
+				8979B1D71AD953C9001BD230 /* NSObject+MJIvar.h */,
+				8979B1D81AD953C9001BD230 /* NSObject+MJIvar.m */,
+				8979B1D91AD953C9001BD230 /* NSObject+MJKeyValue.h */,
+				8979B1DA1AD953C9001BD230 /* NSObject+MJKeyValue.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		8979B1E21AD9556C001BD230 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				89975CE71AE151670072E62D /* NSMutableArray+EmotionExtend.h */,
+				89975CE81AE151670072E62D /* NSMutableArray+EmotionExtend.m */,
+				8979B1E31AD9556C001BD230 /* NSString+Emoji.h */,
+				8979B1E41AD9556C001BD230 /* NSString+Emoji.m */,
+				89385C561AD975A0002E89A6 /* NSArray+SubArray.h */,
+				89385C571AD975A0002E89A6 /* NSArray+SubArray.m */,
+				891E3D0A1AD9847700A74F20 /* UIView+EmotionExtend.h */,
+				891E3D0B1AD9847700A74F20 /* UIView+EmotionExtend.m */,
+				8906D8021ADE49950082403C /* NSString+EmotionExtend.h */,
+				8906D8031ADE49950082403C /* NSString+EmotionExtend.m */,
+				893BB10A1AE0CD8B003D9CB6 /* NSAttributedString+Emotion.h */,
+				893BB10B1AE0CD8B003D9CB6 /* NSAttributedString+Emotion.m */,
+				893BB1111AE0D4D9003D9CB6 /* UITextView+Emotion.h */,
+				893BB1121AE0D4D9003D9CB6 /* UITextView+Emotion.m */,
+				893BB1141AE0D680003D9CB6 /* UITextField+Emotion.h */,
+				893BB1151AE0D680003D9CB6 /* UITextField+Emotion.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D6633F8D1AD8D76B00303043 /* CoreEmotionView */ = {
+			isa = PBXGroup;
+			children = (
+				D6633FAA1AD8E3DE00303043 /* Lib */,
+				D6633F8F1AD8D78C00303043 /* CoreEmotionView.h */,
+				D6633F901AD8D78C00303043 /* CoreEmotionView.m */,
+				D6633F921AD8D7B000303043 /* CoreEmotionView.xib */,
+			);
+			path = CoreEmotionView;
+			sourceTree = "<group>";
+		};
+		D6633F941AD8E06200303043 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				895796B41AE10AAA00E8B04A /* CoreArchive */,
+				8979B1CB1AD953C9001BD230 /* MJExtension */,
+				D6633F951AD8E0D400303043 /* CoreBtn */,
+			);
+			path = FrameWorks;
+			sourceTree = "<group>";
+		};
+		D6633F951AD8E0D400303043 /* CoreBtn */ = {
+			isa = PBXGroup;
+			children = (
+				D6633F961AD8E0D400303043 /* Anim */,
+				D6633F991AD8E0D400303043 /* CoreBtn.h */,
+				D6633F9A1AD8E0D400303043 /* CoreBtn.m */,
+				D6633F9B1AD8E0D400303043 /* CoreStatusBtn.h */,
+				D6633F9C1AD8E0D400303043 /* CoreStatusBtn.m */,
+				D6633F9D1AD8E0D400303043 /* UIImage+ColorForBtn */,
+				D6633FA01AD8E0D400303043 /* View */,
+			);
+			path = CoreBtn;
+			sourceTree = "<group>";
+		};
+		D6633F961AD8E0D400303043 /* Anim */ = {
+			isa = PBXGroup;
+			children = (
+				D6633F971AD8E0D400303043 /* AnimForCoreBtn.h */,
+				D6633F981AD8E0D400303043 /* AnimForCoreBtn.m */,
+			);
+			path = Anim;
+			sourceTree = "<group>";
+		};
+		D6633F9D1AD8E0D400303043 /* UIImage+ColorForBtn */ = {
+			isa = PBXGroup;
+			children = (
+				D6633F9E1AD8E0D400303043 /* UIImage+ColorForBtn.h */,
+				D6633F9F1AD8E0D400303043 /* UIImage+ColorForBtn.m */,
+			);
+			path = "UIImage+ColorForBtn";
+			sourceTree = "<group>";
+		};
+		D6633FA01AD8E0D400303043 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6633FA11AD8E0D400303043 /* CoreStatusBtnMaskView.h */,
+				D6633FA21AD8E0D400303043 /* CoreStatusBtnMaskView.m */,
+				D6633FA31AD8E0D400303043 /* CoreStatusBtnMaskView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6633FAA1AD8E3DE00303043 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				893BB10D1AE0CE51003D9CB6 /* Class */,
+				8906D8051ADE4A1A0082403C /* Const */,
+				8979B1E21AD9556C001BD230 /* Category */,
+				896559931AD941C300A41F7A /* Resource */,
+				D6633FAB1AD8E3DE00303043 /* Model */,
+				D6633FAC1AD8E3DE00303043 /* View */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		D6633FAB1AD8E3DE00303043 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8965598E1AD93FC600A41F7A /* EmotionModel.h */,
+				8965598F1AD93FC600A41F7A /* EmotionModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6633FAC1AD8E3DE00303043 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6633FAD1AD8E40F00303043 /* EmotionTabBtn.h */,
+				D6633FAE1AD8E40F00303043 /* EmotionTabBtn.m */,
+				8965598B1AD93F7300A41F7A /* EmotionPageView.h */,
+				8965598C1AD93F7300A41F7A /* EmotionPageView.m */,
+				891E3D0D1AD985AD00A74F20 /* EmotionScrollView.h */,
+				891E3D0E1AD985AD00A74F20 /* EmotionScrollView.m */,
+				891E3D101AD9913A00A74F20 /* EmotionItemBtn.h */,
+				891E3D111AD9913A00A74F20 /* EmotionItemBtn.m */,
+				898C022B1ADA129500333734 /* EmotionPageControl.h */,
+				898C022C1ADA129500333734 /* EmotionPageControl.m */,
+				8906D8091ADE52CB0082403C /* EmotionDeleteBtn.h */,
+				8906D80A1ADE52CB0082403C /* EmotionDeleteBtn.m */,
+				893BB1171AE0EE0E003D9CB6 /* EmotionZoomView.h */,
+				893BB1181AE0EE0E003D9CB6 /* EmotionZoomView.m */,
+				893BB11A1AE0EE8E003D9CB6 /* EmotionZoomView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8903C3BB1AD8AF8000E5B060 /* CoreEmotionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8903C3DF1AD8AF8100E5B060 /* Build configuration list for PBXNativeTarget "CoreEmotionView" */;
+			buildPhases = (
+				8903C3B81AD8AF8000E5B060 /* Sources */,
+				8903C3B91AD8AF8000E5B060 /* Frameworks */,
+				8903C3BA1AD8AF8000E5B060 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreEmotionView;
+			productName = CoreEmotionView;
+			productReference = 8903C3BC1AD8AF8000E5B060 /* CoreEmotionView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8903C3D41AD8AF8000E5B060 /* CoreEmotionViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8903C3E21AD8AF8100E5B060 /* Build configuration list for PBXNativeTarget "CoreEmotionViewTests" */;
+			buildPhases = (
+				8903C3D11AD8AF8000E5B060 /* Sources */,
+				8903C3D21AD8AF8000E5B060 /* Frameworks */,
+				8903C3D31AD8AF8000E5B060 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8903C3D71AD8AF8100E5B060 /* PBXTargetDependency */,
+			);
+			name = CoreEmotionViewTests;
+			productName = CoreEmotionViewTests;
+			productReference = 8903C3D51AD8AF8100E5B060 /* CoreEmotionViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8903C3B41AD8AF8000E5B060 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "冯成林";
+				TargetAttributes = {
+					8903C3BB1AD8AF8000E5B060 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					8903C3D41AD8AF8000E5B060 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 8903C3BB1AD8AF8000E5B060;
+					};
+				};
+			};
+			buildConfigurationList = 8903C3B71AD8AF8000E5B060 /* Build configuration list for PBXProject "CoreEmotionView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8903C3B31AD8AF8000E5B060;
+			productRefGroup = 8903C3BD1AD8AF8000E5B060 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8903C3BB1AD8AF8000E5B060 /* CoreEmotionView */,
+				8903C3D41AD8AF8000E5B060 /* CoreEmotionViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8903C3BA1AD8AF8000E5B060 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89655B591AD951D100A41F7A /* EmotionIcons.bundle in Resources */,
+				8903C3CB1AD8AF8000E5B060 /* Main.storyboard in Resources */,
+				8903C3D01AD8AF8000E5B060 /* LaunchScreen.xib in Resources */,
+				893BB11B1AE0EE8E003D9CB6 /* EmotionZoomView.xib in Resources */,
+				D6633FA91AD8E0D400303043 /* CoreStatusBtnMaskView.xib in Resources */,
+				8903C3CD1AD8AF8000E5B060 /* Images.xcassets in Resources */,
+				D6633F931AD8D7B000303043 /* CoreEmotionView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8903C3D31AD8AF8000E5B060 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8903C3B81AD8AF8000E5B060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8979B1DF1AD953C9001BD230 /* NSObject+MJCoding.m in Sources */,
+				891E3D121AD9913A00A74F20 /* EmotionItemBtn.m in Sources */,
+				8979B1E11AD953C9001BD230 /* NSObject+MJKeyValue.m in Sources */,
+				8979B1DD1AD953C9001BD230 /* MJIvar.m in Sources */,
+				8903C3C81AD8AF8000E5B060 /* ViewController.m in Sources */,
+				89975CE91AE151670072E62D /* NSMutableArray+EmotionExtend.m in Sources */,
+				893BB1101AE0CE6C003D9CB6 /* EmotionAttachment.m in Sources */,
+				8979B1DC1AD953C9001BD230 /* MJFoundation.m in Sources */,
+				D6633FA51AD8E0D400303043 /* CoreBtn.m in Sources */,
+				8903C3C51AD8AF8000E5B060 /* AppDelegate.m in Sources */,
+				8903C3C21AD8AF8000E5B060 /* main.m in Sources */,
+				893BB10C1AE0CD8B003D9CB6 /* NSAttributedString+Emotion.m in Sources */,
+				D6633FAF1AD8E40F00303043 /* EmotionTabBtn.m in Sources */,
+				8979B1E01AD953C9001BD230 /* NSObject+MJIvar.m in Sources */,
+				89385C581AD975A0002E89A6 /* NSArray+SubArray.m in Sources */,
+				8979B1E51AD9556C001BD230 /* NSString+Emoji.m in Sources */,
+				896559901AD93FC600A41F7A /* EmotionModel.m in Sources */,
+				D6633FA41AD8E0D400303043 /* AnimForCoreBtn.m in Sources */,
+				895796BA1AE10AAA00E8B04A /* NSString+File.m in Sources */,
+				8906D80B1ADE52CB0082403C /* EmotionDeleteBtn.m in Sources */,
+				D6633FA81AD8E0D400303043 /* CoreStatusBtnMaskView.m in Sources */,
+				893BB1131AE0D4D9003D9CB6 /* UITextView+Emotion.m in Sources */,
+				8906D8081ADE4A2E0082403C /* EmotionViewConst.m in Sources */,
+				D6633FA61AD8E0D400303043 /* CoreStatusBtn.m in Sources */,
+				D6633FA71AD8E0D400303043 /* UIImage+ColorForBtn.m in Sources */,
+				893BB1191AE0EE0E003D9CB6 /* EmotionZoomView.m in Sources */,
+				891E3D0F1AD985AD00A74F20 /* EmotionScrollView.m in Sources */,
+				8979B1DE1AD953C9001BD230 /* MJType.m in Sources */,
+				891E3D0C1AD9847700A74F20 /* UIView+EmotionExtend.m in Sources */,
+				8906D8041ADE49950082403C /* NSString+EmotionExtend.m in Sources */,
+				895796BB1AE10AAA00E8B04A /* CoreArchive.m in Sources */,
+				8965598D1AD93F7300A41F7A /* EmotionPageView.m in Sources */,
+				898C022D1ADA129500333734 /* EmotionPageControl.m in Sources */,
+				893BB1161AE0D680003D9CB6 /* UITextField+Emotion.m in Sources */,
+				D6633F911AD8D78C00303043 /* CoreEmotionView.m in Sources */,
+				8979B1DB1AD953C9001BD230 /* MJConst.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8903C3D11AD8AF8000E5B060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8903C3DC1AD8AF8100E5B060 /* CoreEmotionViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8903C3D71AD8AF8100E5B060 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8903C3BB1AD8AF8000E5B060 /* CoreEmotionView */;
+			targetProxy = 8903C3D61AD8AF8100E5B060 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8903C3C91AD8AF8000E5B060 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8903C3CA1AD8AF8000E5B060 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8903C3CE1AD8AF8000E5B060 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8903C3CF1AD8AF8000E5B060 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8903C3DD1AD8AF8100E5B060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8903C3DE1AD8AF8100E5B060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8903C3E01AD8AF8100E5B060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoreEmotionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8903C3E11AD8AF8100E5B060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoreEmotionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8903C3E31AD8AF8100E5B060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoreEmotionViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreEmotionView.app/CoreEmotionView";
+			};
+			name = Debug;
+		};
+		8903C3E41AD8AF8100E5B060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoreEmotionViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreEmotionView.app/CoreEmotionView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8903C3B71AD8AF8000E5B060 /* Build configuration list for PBXProject "CoreEmotionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8903C3DD1AD8AF8100E5B060 /* Debug */,
+				8903C3DE1AD8AF8100E5B060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8903C3DF1AD8AF8100E5B060 /* Build configuration list for PBXNativeTarget "CoreEmotionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8903C3E01AD8AF8100E5B060 /* Debug */,
+				8903C3E11AD8AF8100E5B060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8903C3E21AD8AF8100E5B060 /* Build configuration list for PBXNativeTarget "CoreEmotionViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8903C3E31AD8AF8100E5B060 /* Debug */,
+				8903C3E41AD8AF8100E5B060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8903C3B41AD8AF8000E5B060 /* Project object */;
+}
