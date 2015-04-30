@@ -27,6 +27,7 @@
 		893BB1161AE0D680003D9CB6 /* UITextField+Emotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 893BB1151AE0D680003D9CB6 /* UITextField+Emotion.m */; };
 		893BB1191AE0EE0E003D9CB6 /* EmotionZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 893BB1181AE0EE0E003D9CB6 /* EmotionZoomView.m */; };
 		893BB11B1AE0EE8E003D9CB6 /* EmotionZoomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 893BB11A1AE0EE8E003D9CB6 /* EmotionZoomView.xib */; };
+		894258D81AF1BCB600EF1A99 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 894258D71AF1BCB600EF1A99 /* 1.png */; };
 		895796BA1AE10AAA00E8B04A /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = 895796B71AE10AAA00E8B04A /* NSString+File.m */; };
 		895796BB1AE10AAA00E8B04A /* CoreArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 895796B91AE10AAA00E8B04A /* CoreArchive.m */; };
 		8965598D1AD93F7300A41F7A /* EmotionPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8965598C1AD93F7300A41F7A /* EmotionPageView.m */; };
@@ -102,6 +103,7 @@
 		893BB1171AE0EE0E003D9CB6 /* EmotionZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionZoomView.h; sourceTree = "<group>"; };
 		893BB1181AE0EE0E003D9CB6 /* EmotionZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmotionZoomView.m; sourceTree = "<group>"; };
 		893BB11A1AE0EE8E003D9CB6 /* EmotionZoomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmotionZoomView.xib; sourceTree = "<group>"; };
+		894258D71AF1BCB600EF1A99 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		895796B61AE10AAA00E8B04A /* NSString+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+File.h"; sourceTree = "<group>"; };
 		895796B71AE10AAA00E8B04A /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
 		895796B81AE10AAA00E8B04A /* CoreArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreArchive.h; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 		8903C3BF1AD8AF8000E5B060 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				894258D71AF1BCB600EF1A99 /* 1.png */,
 				8903C3C01AD8AF8000E5B060 /* Info.plist */,
 				8903C3C11AD8AF8000E5B060 /* main.m */,
 			);
@@ -507,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89655B591AD951D100A41F7A /* EmotionIcons.bundle in Resources */,
+				894258D81AF1BCB600EF1A99 /* 1.png in Resources */,
 				8903C3CB1AD8AF8000E5B060 /* Main.storyboard in Resources */,
 				8903C3D01AD8AF8000E5B060 /* LaunchScreen.xib in Resources */,
 				893BB11B1AE0EE8E003D9CB6 /* EmotionZoomView.xib in Resources */,
@@ -691,6 +695,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CoreEmotionView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -702,6 +707,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CoreEmotionView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

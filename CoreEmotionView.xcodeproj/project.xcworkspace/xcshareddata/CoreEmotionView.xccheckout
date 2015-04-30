@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B1E5B7DD-2019-40F1-8B24-FE4CA2F11CA3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CoreEmotionView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>45DA94B570C8384B7CCC3E3B64FB62A3D35E0EDC</key>
+		<string>https://github.com/nsdictionary/CoreEmotionView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CoreEmotionView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>45DA94B570C8384B7CCC3E3B64FB62A3D35E0EDC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nsdictionary/CoreEmotionView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>45DA94B570C8384B7CCC3E3B64FB62A3D35E0EDC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>45DA94B570C8384B7CCC3E3B64FB62A3D35E0EDC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CoreEmotionView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
