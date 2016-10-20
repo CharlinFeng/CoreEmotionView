@@ -174,7 +174,7 @@
 
 - (IBAction)textBtnClick:(id)sender {
     
-    
+    NSLog(@"---%@,---%@",self.textView.text,self.textView.attributedText);
 }
 
 

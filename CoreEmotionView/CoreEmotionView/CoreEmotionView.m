@@ -215,8 +215,6 @@
     
     //按钮公共事件区
     [self recentBtnClick:_recentBtn];
-    
-    
 }
 
 
